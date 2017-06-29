@@ -1,0 +1,62 @@
+/*
+ * Empty Stylesheet file.
+ */
+@font-face {
+    font-family: Sansation;
+    src: url('Sansation-Regular.ttf');
+}
+root { 
+    display: block;
+}
+.root {
+    -fx-background-image: url("Assets/background.jpg");
+}
+#welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-family: "Sansation";
+    -fx-fill: #FFF;
+}
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 25;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Sansation";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.button {
+    -fx-text-fill: #009688;
+    -fx-font-family: "Sansation";
+    -fx-font-weight: bold;
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 20px;
+}

@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017年3月7日, 下午07:04:20
+    Author     : Eric
+*/
+@font-face {
+    font-family: Sansation;
+    src: url('Sansation-Regular.ttf');
+}
+root { 
+    display: block;
+}
+.root {
+    -fx-background-image: url("Assets/background.jpg");
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-family: "Sansation";
+    -fx-fill: #FFF;
+}
+.label-text{
+    -fx-font-size: 24px;
+    -fx-font-family: "Sansation";
+    -fx-fill: #FFF;
+}
+#actiontarget {
+    -fx-font-size: 24px;
+    -fx-fill: #FFF;
+    -fx-font-family: "Sansation";
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-text-fill: #009688;
+    -fx-font-family: "Sansation";
+    -fx-font-weight: bold;
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 20px;
+}

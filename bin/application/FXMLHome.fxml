@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import application.FileList ?>
+
+<AnchorPane id="AnchorPane" prefHeight="768" prefWidth="1366"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLHomeController">
+	<GridPane styleClass="root" prefHeight="768" prefWidth="1366"
+		alignment="center" hgap="20" vgap="20">
+		<Text text="Socket IO File Manger System" id="welcome-text"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" />
+		<TextField 
+            GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="serverFilePath" prefWidth="500"/>
+        <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="center">
+			<Button text="View" onAction="#changeFolderPath"
+				prefWidth="300" />
+		</VBox>
+		<VBox spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="1" alignment="center">
+			<Button text="Download" onAction="#handleSubmitButtonAction"
+				prefWidth="300" />
+		</VBox>
+		<TableView fx:id="tableView" layoutX="35.0" layoutY="28.0" GridPane.columnSpan="3" GridPane.columnIndex="0" GridPane.rowIndex="2"
+			prefHeight="400.0" prefWidth="1200.0">
+			<columns>
+				<TableColumn prefWidth="300.0" text="File Name" fx:id="col1" />
+			</columns>
+			<columns>
+				<TableColumn prefWidth="450.0" text="File Path" fx:id="col2" />
+			</columns>
+			<columns>
+				<TableColumn prefWidth="450.0" text="File Size" fx:id="col3" />
+			</columns>
+		</TableView>
+		
+	</GridPane>
+	<stylesheets>
+		<URL value="@fxmlhome.css" />
+	</stylesheets>
+</AnchorPane>
